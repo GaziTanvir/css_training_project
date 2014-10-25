@@ -1,0 +1,77 @@
+//importing nece file
+@import "variables";
+
+//fixing generated code
+body{
+  padding: 0;
+  margin : 0;
+  }
+
+//global styling
+body,p,a,h1,h2,h3,h4,h5,h6,span{
+  font-family: @primary-font;
+  }
+
+.container-wrap{
+  width: 1170px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  }
+
+a{
+  &:hover{
+    color: @primary-color;
+    }
+  text-decoration: none;
+  color: @primary-font-color;
+  transition: all 300ms;
+  }
+
+.btn{
+  &:hover{
+    background: darken(@primary-color,10%);
+    }
+  background: @primary-color;
+  padding: 8px 20px;
+  border-radius: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  }
+
+//local styling
+
+header{
+  a.logo{
+    width: 211px;
+    height: 36px;
+    background: url("../images/logo.png") no-repeat 50%;
+    text-indent: -9999em;
+    display: block;
+    float: left;
+    padding-top: 40px;
+    }
+  ul.navigation {
+     li{
+       a{
+         text-transform: uppercase;
+         font-size:@primary-font-size;
+         font-weight: 200;
+         }
+       a.btn-login{
+          &:hover{
+            color: #fff;
+            }
+          margin-left: 30px;
+         }
+       display: inline-block;
+       padding: 32px 10px;
+       }
+    text-align: right;
+    list-style: none;
+    margin: 0;
+    }
+
+  background: @header-color2;
+  }
